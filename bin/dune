@@ -1,0 +1,11 @@
+(executable
+ (name client)
+ (modules client)
+ (libraries routine)
+ (preprocess (pps lwt_ppx)))
+
+(executable
+ (name server)
+ (modules server)
+ (libraries routine)
+ (preprocess (pps lwt_ppx)))
